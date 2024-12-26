@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Comida para Caballos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #6b4226;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 300px;
+            margin: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .product button {
+            background-color: #6b4226;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .product button:hover {
+            background-color: #8c5439;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #6b4226;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function comprar(producto) {
+            alert("Has seleccionado comprar: " + producto);
+        }
+    </script>
+</head>
+<body>
+    <!-- HEADER: Encabezado principal -->
+    <header>
+        <h1>Venta de Comida para Caballos</h1>
+    </header>
+
+    <!-- NAV: Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- MAIN: Contenido principal -->
+    <main>
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio">
+            <h2>Bienvenidos a forrajes la juanita</h2>
+            <img src="imagenes/caballo_1.jpeg" alt="Un hermoso caballo">
+            <p>Una buena alimentación es fundamental para la salud de los caballos, ya que les permite desarrollar sus funciones vitales y realizar su actividad cotidiana. Una dieta equilibrada y adecuada a sus necesidades les ayuda a evitar enfermedades como cólicos, gastritis, timpanismo y astrogliosis. 
+                Algunos aspectos a tener en cuenta en la alimentación de los caballos son:
+                Tipo de alimento
+                La base de la dieta de un caballo debe ser forraje de buena calidad, que debe constituir entre el 60 y el 70% de su ración. Los caballos son herbívoros y su estómago es pequeño, por lo que es conveniente darles pequeñas cantidades de alimento en intervalos cortos. </p>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <article class="product">
+                <h3>xDietz</h3>
+                <img src="imagenes/comida_2.jpeg" alt="Imagen del producto xDietz">
+                <p>Comida premium para caballos. Precio: <strong>$14.000</strong> por saco.</p>
+                <button onclick="comprar('xDietz')">Comprar</button>
+            </article>
+            <article class="product">
+                <h3>Fardo</h3>
+                <img src="imagenes/fardos_1.webp" alt="Imagen del producto Fardo">
+                <p>Heno de alta calidad. Precio: <strong>$6000</strong> por unidad.</p>
+                <button onclick="comprar('Fardo')">Comprar</button>
+            </article>
+            <article class="product">
+                <h3>Comida Balanceada</h3>
+                <img src="imagenes/COMIDA_3.png" alt="Imagen de Comida Balanceada">
+                <p>Nutrición completa para tus caballos. Precio: <strong>$20.000</strong> por saco.</p>
+                <button onclick="comprar('Comida Balanceada')">Comprar</button>
+            </article>
+            <article class="product">
+                <h3>Bozales para Caballos</h3>
+                <img src="imagenes/bozales_1.jpeg" alt="Imagen de un bozal para caballos">
+                <p>Bozales resistentes y cómodos. Precio: <strong>$12.000</strong> por unidad.</p>
+                <button onclick="comprar('Bozal')">Comprar</button>
+            </article>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, llámanos al <strong>(011) 65230886</strong> o escríbenos a <mili>ventas@comidacaballos.com</mili>.</p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Venta de Comida para Caballos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
